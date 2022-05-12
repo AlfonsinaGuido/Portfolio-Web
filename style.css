@@ -1,0 +1,20 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar{ 
+    background-color: #aee8f7;
+    box-shadow: 0 6px 6px 0 rgba(120, 0, 0, 0.3);
+    min-height: 100px;
+}
+
+.nav-link{ color: #ac0d0d;}
+.nav-link:hover{ color: #ac0d0d;}
+
+.logo-brand{ 
+    min-width: 120px;
+    max-width: 120px;
+}
+
+.navbar-toggler { font-size: 40px; }
+.navbar-toggler:focus { outline: none; }
