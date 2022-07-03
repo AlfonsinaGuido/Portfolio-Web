@@ -63,6 +63,11 @@ section {
 
 .divider { border-bottom: 2px solid #f5f5f5;}
 
+#portfolio a img {
+    max-width: 200px;
+    height: 100px;
+}
+
 .form-control {
     font-size: 16px;
     border: 1px solid #cacaca;
@@ -77,6 +82,31 @@ section {
     outline: none;
     box-shadow: none;
 }
+
+input:invalid {
+    background-color: #ffdddd;
+  }
+  
+form:invalid {
+    border: 5px solid #ffdddd;
+  }
+  
+input:valid {
+    background-color: #ddffdd;
+  }
+  
+form:valid {
+    border: 5px solid #ddffdd;
+  }
+  
+input:required {
+    border-color: #48e917;
+    border-width: 3px;
+  }
+  
+input:required:invalid {
+    border-color: #C00000;
+  }
 
 ion-icon { 
     vertical-align: sub;
@@ -158,6 +188,13 @@ ion-icon:focus {
         display: block !important;
         padding: 20px 0 !important;
         font-size: 20px !important;
+    }
+    .technologies-logo {
+        max-width: 150px !important;
+        max-height: 150px !important;
+    }
+    .technologies-img {
+        max-width: 270px !important;
     }
 }
 

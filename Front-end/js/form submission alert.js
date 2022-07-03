@@ -15,6 +15,11 @@ const alert = (message, type) => {
 const alertTrigger = document.getElementById('submitFormBtn')
 if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
-    alert('Thank you! I will answer promptly', 'success')
+    alert('Thank you! I will answer promptly', 'info')
   })
+}
+
+function cleanUp() {
+  contactForm.reset();
+  return false;
 }
