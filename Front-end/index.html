@@ -21,8 +21,8 @@
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-
-    <title>Hello, world!</title>
+    <link rel="icon" href="imagenes/favicon.ico" />
+    <title>Alfonsina Guido - Full Stack Developer</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -68,11 +68,11 @@
         <div class="content-center topmargin-lg">
           <h1>I am Yesica Alfonsina Guido</h1>
           <p id="hero-p">Full Stack Developer Jr.</p>
-          <a download="CV" href="CV.doc" class="btn btn-light topmargin-sm"
-            >Download CV
+          <a download="CV" href="CV.pdf" class="btn btn-light topmargin-sm"
+            >Download CV (Spanish)
             <ion-icon
               name="archive-outline"
-              style="margin-left: 30px; font-size: 25px"
+              style="margin: auto 30px; font-size: 25px"
             ></ion-icon
           ></a>
         </div>
@@ -98,7 +98,112 @@
         <div class="content-center">
           <h2>My studies and skills</h2>
           <div class="row">
-            <div class="col-md-6 topmargin-sm bg-dark-blue"></div>
+            <table class="container-fluid" style="margin: 80px auto">
+              <tr>
+                <th>
+                  <img
+                    src="imagenes/Inti.png"
+                    class="bg-dark-blue technologies-logo"
+                    style="max-width: 200px"
+                    alt="logo"
+                  />
+                </th>
+                <th>
+                  <h4><b>Full Stack Developer Jr</b> (2021->2022)</h4>
+                  <h4><i>Argentina Programa - INTI</i></h4>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <img
+                    src="imagenes/UNLa.png"
+                    class="logo-brand technologies-logo"
+                    alt="logo"
+                  />
+                </th>
+                <th>
+                  <h4><b>Licenciada en Turismo</b> (2008->2012)</h4>
+                  <h4><i>Universidad Nacional de Lanús</i></h4>
+                </th>
+              </tr>
+            </table>
+            <div class="container-fluid">
+              <div class="topmargin-sm">
+                <img src="imagenes/Hard Skills.png" class="technologies-img" />
+              </div>
+              <div class="topmargin-lg">
+                <img
+                  src="imagenes/Soft Skills.png"
+                  class="technologies-img"
+                  style="max-width: 800px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="divider">
+      <div class="container-fluid">
+        <div class="content-center">
+          <h2>My projects</h2>
+          <h3>
+            Framework, service platform, programming models and languages used
+            for the development of this web portfolio
+          </h3>
+        </div>
+        <div class="content-center">
+          <div class="row">
+            <div class="col-md-4 topmargin-sm">
+              <a
+                href="https://github.com/AlfonsinaGuido/Portfolio-Web.git"
+                class="btn topmargin-sm"
+              >
+                <img src="imagenes/boostrap-logo.png" />
+              </a>
+              <a
+                href="https://github.com/AlfonsinaGuido/MiPortfolioConAngular.git"
+                class="btn topmargin-sm"
+              >
+                <img src="imagenes/Angular-logo.png" />
+              </a>
+              <a href="" class="btn topmargin-sm">
+                <img src="imagenes/Firebase-logo.png" />
+              </a>
+            </div>
+
+            <div class="col-md-4 topmargin-sm">
+              <a href="" class="btn topmargin-sm">
+                <img src="imagenes/POO-logo.png" />
+              </a>
+              <a href="" class="btn topmargin-sm">
+                <img src="imagenes/Spring boot-logo.png" />
+              </a>
+              <a href="" class="btn topmargin-sm">
+                <img src="imagenes/HEROKU-logo.png" />
+              </a>
+            </div>
+            <div class="col-md-4 topmargin-sm">
+              <a href="" class="btn topmargin-sm">
+                <img src="imagenes/SQL-logo.png" />
+              </a>
+              <a href="" class="btn topmargin-sm">
+                <img src="imagenes/Java-logo.png" />
+              </a>
+              <img
+                style="
+                  max-width: 200px;
+                  height: 100px;
+                  margin-top: 45px;
+                  margin-bottom: 7px;
+                "
+                src="imagenes/MySQL-logo.png"
+              />
+              <a href="" class="btn topmargin-sm">
+                <img src="imagenes/Clever Cloud-logo.png" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -138,84 +243,89 @@
             </ul>
           </div>
           <div class="col-md-6 topmargin-sm">
-            <div class="row">
-              <form action="enviar.php" method="post">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="name"
-                      id=""
-                      placeholder="Name"
-                    />
-                  </div>
+            <form id="contactForm" action="enviar.php" method="post">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    id=""
+                    placeholder="Name"
+                    required
+                  />
                 </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="lastname"
-                      id=""
-                      placeholder="Last name"
-                    />
-                  </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="lastname"
+                    id=""
+                    placeholder="Last name"
+                    required
+                  />
                 </div>
-                <div class="col-md-12">
-                  <form class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id=""
-                      placeholder="Email"
-                    />
-                  </form>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="mail"
+                    id=""
+                    placeholder="Email"
+                    required
+                  />
                 </div>
-                <div class="col-md-12">
-                  <form class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="companyname"
-                      id=""
-                      placeholder="Company name"
-                    />
-                  </form>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="companyname"
+                    id=""
+                    placeholder="Company name"
+                    required
+                  />
                 </div>
-                <div class="col-md-12">
-                  <form class="form-group">
-                    <input
-                      type="number"
-                      class="form-control"
-                      name="phone"
-                      id=""
-                      placeholder="Phone number (optional)"
-                    />
-                  </form>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="phone"
+                    id=""
+                    placeholder="Phone number (optional)"
+                  />
                 </div>
-                <div class="col-md-12">
-                  <form class="form-group">
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      id=""
-                      placeholder="Write your message"
-                    ></textarea>
-                  </form>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id=""
+                    placeholder="Write your message"
+                    rows="3"
+                    required
+                  ></textarea>
                 </div>
-                <div id="liveAlertPlaceholder" class="col-md-12">
-                  <button
-                    type="submit"
-                    class="btn btn-dark full-width"
-                    id="submitFormBtn"
-                  >
-                    Send <ion-icon name="paper-plane-outline"></ion-icon>
-                  </button>
-                </div>
-              </form>
-            </div>
+              </div>
+              <div id="liveAlertPlaceholder" class="col-md-12">
+                <button
+                  type="submit"
+                  class="btn btn-dark full-width"
+                  id="submitFormBtn"
+                  onclick="cleanUp()"
+                >
+                  Send <ion-icon name="paper-plane-outline"></ion-icon>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
