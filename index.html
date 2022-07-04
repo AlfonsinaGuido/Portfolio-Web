@@ -160,48 +160,45 @@
                 href="https://github.com/AlfonsinaGuido/Portfolio-Web.git"
                 class="btn topmargin-sm"
               >
-                <img src="imagenes/boostrap-logo.png" />
+                <img src="imagenes/bootstrap-logo.png" class="portfolio-logo" />
               </a>
               <a
                 href="https://github.com/AlfonsinaGuido/MiPortfolioConAngular.git"
                 class="btn topmargin-sm"
               >
-                <img src="imagenes/Angular-logo.png" />
+                <img src="imagenes/Angular-logo.png" class="portfolio-logo" />
               </a>
               <a href="" class="btn topmargin-sm">
-                <img src="imagenes/Firebase-logo.png" />
+                <img src="imagenes/Firebase-logo.png" class="portfolio-logo" />
               </a>
             </div>
 
             <div class="col-md-4 topmargin-sm">
               <a href="" class="btn topmargin-sm">
-                <img src="imagenes/POO-logo.png" />
+                <img src="imagenes/POO-logo.png" class="portfolio-logo" />
               </a>
               <a href="" class="btn topmargin-sm">
-                <img src="imagenes/Spring boot-logo.png" />
+                <img
+                  src="imagenes/Spring boot-logo.png"
+                  class="portfolio-logo"
+                />
               </a>
               <a href="" class="btn topmargin-sm">
-                <img src="imagenes/HEROKU-logo.png" />
+                <img src="imagenes/HEROKU-logo.png" class="portfolio-logo" />
               </a>
             </div>
             <div class="col-md-4 topmargin-sm">
               <a href="" class="btn topmargin-sm">
-                <img src="imagenes/SQL-logo.png" />
+                <img style="width: 65px" src="imagenes/Java-logo.png" class="portfolio-logo" />
               </a>
               <a href="" class="btn topmargin-sm">
-                <img src="imagenes/Java-logo.png" />
+                <img src="imagenes/MySQL-logo.png" class="portfolio-logo" />
               </a>
-              <img
-                style="
-                  max-width: 200px;
-                  height: 100px;
-                  margin-top: 45px;
-                  margin-bottom: 7px;
-                "
-                src="imagenes/MySQL-logo.png"
-              />
               <a href="" class="btn topmargin-sm">
-                <img src="imagenes/Clever Cloud-logo.png" />
+                <img
+                  src="imagenes/Clever Cloud-logo.png"
+                  class="portfolio-logo"
+                />
               </a>
             </div>
           </div>
@@ -243,7 +240,10 @@
             </ul>
           </div>
           <div class="col-md-6 topmargin-sm">
-            <form id="contactForm" action="enviar.php" method="post">
+            <form
+              action="https://formsubmit.co/yesicaguidounla@hotmail.com"
+              method="POST"
+            >
               <div class="col-md-12">
                 <div class="form-group">
                   <input
@@ -315,13 +315,8 @@
                   ></textarea>
                 </div>
               </div>
-              <div id="liveAlertPlaceholder" class="col-md-12">
-                <button
-                  type="submit"
-                  class="btn btn-dark full-width"
-                  id="submitFormBtn"
-                  onclick="cleanUp()"
-                >
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-dark full-width">
                   Send <ion-icon name="paper-plane-outline"></ion-icon>
                 </button>
               </div>
@@ -338,7 +333,6 @@
           class="logo-brand"
           alt="logo"
           style="margin-bottom: 20px"
-          ;
         />
         <ul class="list-inline">
           <li class="list-inline-item footer-menu">
@@ -399,7 +393,5 @@
     ></script>
     <!-- typewriter effect for hero-p javascript code -->
     <script src="js/typewriter effect.js"></script>
-    <!-- form submission alert for submitFormBtn javascript code -->
-    <script src="js/form submission alert.js"></script>
   </body>
 </html>
