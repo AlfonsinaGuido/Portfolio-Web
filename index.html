@@ -37,7 +37,10 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <ion-icon name="grid-outline"></ion-icon>
+          <ion-icon
+            style="background: none; border-radius: 0; color: #eb671b"
+            name="grid-outline"
+          ></ion-icon>
         </button>
 
         <div class="collapse navbar-collapse" id="MenuNavegacion">
@@ -59,20 +62,121 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#miModal"
+              >
+                Login
+              </button>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <div
+      class="modal fade"
+      id="miModal"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-logo position-relative">
+            <button
+              type="button"
+              class="btn-close position-absolute end-0 mx-2 mt-2"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <br />
+            <br />
+            <img
+              src="imagenes/LOGO.png"
+              class="logo-modal mx-auto d-block"
+              alt="logo"
+            />
+          </div>
+          <div class="modal-header d-block text-center">
+            <h4 class="modal-title" id="modalTitle">
+              <b>Log in to activate editing</b>
+            </h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="container-fluid">
+                <div class="form-group">
+                  <label for="username"><b>Username</b></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="username"
+                    id="username"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password"><b>Password</b></label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="password"
+                    id="password"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary mx-auto">
+                  Activate
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section id="hero" class="divider">
-      <div class="container">
-        <div class="content-center topmargin-lg">
+      <div class="container position-relative">
+        <button
+          type="button"
+          id=""
+          class="edit-buttons position-absolute end-0"
+        >
+          <ion-icon
+            style="background: none; border-radius: 0"
+            name="pencil-sharp"
+          ></ion-icon>
+        </button>
+        <br />
+        <br />
+        <div class="content-center topmargin-lg position-relative">
           <h1>I am Yesica Alfonsina Guido</h1>
+
+          <button
+            type="button"
+            id=""
+            class="edit-buttons position-absolute end-0 mx-3"
+          >
+            <ion-icon
+              style="background: none; border-radius: 0"
+              name="pencil-sharp"
+            ></ion-icon>
+          </button>
+          <br />
           <p id="hero-p">Full Stack Developer Jr.</p>
+          <br />
           <a download="CV" href="CV.pdf" class="btn btn-light topmargin-sm"
             >Download CV (Spanish)
             <ion-icon
               name="archive-outline"
-              style="margin: auto 30px; font-size: 25px"
+              style="margin: auto 5px; font-size: 25px; color: #1a1a1a"
             ></ion-icon
           ></a>
         </div>
@@ -83,6 +187,37 @@
       <div class="container-fluid">
         <div class="content-center">
           <h2>Who am I?</h2>
+          <ul class="list-inline">
+            <li
+              id=""
+              class="list-pencil-trash list-inline-item position-relative"
+              style="width: 94%"
+            >
+              <button
+                type="button"
+                id=""
+                class="edit-buttons position-absolute end-0"
+              >
+                <ion-icon
+                  style="background: none; border-radius: 0"
+                  name="pencil-sharp"
+                ></ion-icon>
+              </button>
+            </li>
+            <li class="list-inline-item position-relative">
+              <button
+                type="button"
+                id=""
+                class="edit-buttons position-absolute end-0"
+              >
+                <ion-icon
+                  style="background: none; border-radius: 0"
+                  name="trash-outline"
+                ></ion-icon>
+              </button>
+            </li>
+          </ul>
+          <br />
           <h3>I am a <b>Web Developer</b> and a Graduate in Tourism</h3>
           <p>
             I love collaborating and working as a team, I am looking for a full
@@ -98,9 +233,13 @@
         <div class="content-center">
           <h2>My studies and skills</h2>
           <div class="row">
-            <table class="container-fluid" style="margin: 80px auto">
+            <table class="container-fluid" style="margin: 20px 15px">
               <tr>
                 <th>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                   <img
                     src="imagenes/Inti.png"
                     class="bg-dark-blue technologies-logo"
@@ -109,12 +248,61 @@
                   />
                 </th>
                 <th>
+                  <ul class="list-inline">
+                    <li
+                      class="list-inline-item position-relative"
+                      style="width: 100%"
+                    >
+                      <button
+                        type="button"
+                        id=""
+                        class="edit-buttons position-absolute end-0"
+                      >
+                        <ion-icon
+                          style="background: none; border-radius: 0"
+                          name="add-outline"
+                        ></ion-icon>
+                      </button>
+                      <br />
+                      <br />
+                    </li>
+                    <li
+                      class="list-inline-item position-relative"
+                      style="width: 92%"
+                    >
+                      <button
+                        type="button"
+                        id=""
+                        class="edit-buttons position-absolute end-0"
+                      >
+                        <ion-icon
+                          style="background: none; border-radius: 0"
+                          name="pencil-sharp"
+                        ></ion-icon>
+                      </button>
+                    </li>
+                    <li class="list-inline-item position-relative">
+                      <button
+                        type="button"
+                        id=""
+                        class="edit-buttons position-absolute end-0"
+                      >
+                        <ion-icon
+                          style="background: none; border-radius: 0"
+                          name="trash-outline"
+                        ></ion-icon>
+                      </button>
+                    </li>
+                  </ul>
+                  <br />
                   <h4><b>Full Stack Developer Jr</b> (2021->2022)</h4>
                   <h4><i>Argentina Programa - INTI</i></h4>
                 </th>
               </tr>
               <tr>
                 <th>
+                  <br />
+                  <br />
                   <img
                     src="imagenes/UNLa.png"
                     class="logo-brand technologies-logo"
@@ -122,6 +310,36 @@
                   />
                 </th>
                 <th>
+                  <ul class="list-inline">
+                    <li
+                      class="list-inline-item position-relative"
+                      style="width: 92%"
+                    >
+                      <button
+                        type="button"
+                        id=""
+                        class="edit-buttons position-absolute end-0"
+                      >
+                        <ion-icon
+                          style="background: none; border-radius: 0"
+                          name="pencil-sharp"
+                        ></ion-icon>
+                      </button>
+                    </li>
+                    <li class="list-inline-item position-relative">
+                      <button
+                        type="button"
+                        id=""
+                        class="edit-buttons position-absolute end-0"
+                      >
+                        <ion-icon
+                          style="background: none; border-radius: 0"
+                          name="trash-outline"
+                        ></ion-icon>
+                      </button>
+                    </li>
+                  </ul>
+                  <br />
                   <h4><b>Licenciada en Turismo</b> (2008->2012)</h4>
                   <h4><i>Universidad Nacional de Lanús</i></h4>
                 </th>
@@ -129,9 +347,68 @@
             </table>
             <div class="container-fluid">
               <div class="topmargin-sm">
+                <ul class="list-inline">
+                  <li
+                    class="list-inline-item position-relative"
+                    style="width: 94%"
+                  >
+                    <button
+                      type="button"
+                      id=""
+                      class="edit-buttons position-absolute end-0"
+                    >
+                      <ion-icon
+                        style="background: none; border-radius: 0"
+                        name="pencil-sharp"
+                      ></ion-icon>
+                    </button>
+                  </li>
+                  <li class="list-inline-item position-relative">
+                    <button
+                      type="button"
+                      id=""
+                      class="edit-buttons position-absolute end-0"
+                    >
+                      <ion-icon
+                        style="background: none; border-radius: 0"
+                        name="trash-outline"
+                      ></ion-icon>
+                    </button>
+                  </li>
+                </ul>
                 <img src="imagenes/Hard Skills.png" class="technologies-img" />
               </div>
               <div class="topmargin-lg">
+                <ul class="list-inline">
+                  <li
+                    class="list-inline-item position-relative"
+                    style="width: 94%"
+                  >
+                    <button
+                      type="button"
+                      id=""
+                      class="edit-buttons position-absolute end-0"
+                    >
+                      <ion-icon
+                        style="background: none; border-radius: 0"
+                        name="pencil-sharp"
+                      ></ion-icon>
+                    </button>
+                  </li>
+                  <li class="list-inline-item position-relative">
+                    <button
+                      type="button"
+                      id=""
+                      class="edit-buttons position-absolute end-0"
+                    >
+                      <ion-icon
+                        style="background: none; border-radius: 0"
+                        name="trash-outline"
+                      ></ion-icon>
+                    </button>
+                  </li>
+                </ul>
+                <br />
                 <img
                   src="imagenes/Soft Skills.png"
                   class="technologies-img"
@@ -148,12 +425,79 @@
       <div class="container-fluid">
         <div class="content-center">
           <h2>My projects</h2>
+          <ul class="list-inline">
+            <li class="list-inline-item position-relative" style="width: 94%">
+              <button
+                type="button"
+                id=""
+                class="edit-buttons position-absolute end-0"
+              >
+                <ion-icon
+                  style="background: none; border-radius: 0"
+                  name="pencil-sharp"
+                ></ion-icon>
+              </button>
+            </li>
+            <li class="list-inline-item position-relative">
+              <button
+                type="button"
+                id=""
+                class="edit-buttons position-absolute end-0"
+              >
+                <ion-icon
+                  style="background: none; border-radius: 0"
+                  name="trash-outline"
+                ></ion-icon>
+              </button>
+            </li>
+          </ul>
+          <br />
           <h3>
             Framework, service platform, programming models and languages used
             for the development of this web portfolio
           </h3>
         </div>
+        <br />
         <div class="content-center">
+          <ul class="list-inline">
+            <li class="list-inline-item position-relative" style="width: 100%">
+              <button
+                type="button"
+                id=""
+                class="edit-buttons position-absolute end-0"
+              >
+                <ion-icon
+                  style="background: none; border-radius: 0"
+                  name="add-outline"
+                ></ion-icon>
+              </button>
+              <br />
+            </li>
+            <li class="list-inline-item position-relative" style="width: 94%">
+              <button
+                type="button"
+                id=""
+                class="edit-buttons position-absolute end-0"
+              >
+                <ion-icon
+                  style="background: none; border-radius: 0"
+                  name="pencil-sharp"
+                ></ion-icon>
+              </button>
+            </li>
+            <li class="list-inline-item position-relative">
+              <button
+                type="button"
+                id=""
+                class="edit-buttons position-absolute end-0"
+              >
+                <ion-icon
+                  style="background: none; border-radius: 0"
+                  name="trash-outline"
+                ></ion-icon>
+              </button>
+            </li>
+          </ul>
           <div class="row">
             <div class="col-md-4 topmargin-sm">
               <a
@@ -189,7 +533,11 @@
             </div>
             <div class="col-md-4 topmargin-sm">
               <a href="" class="btn topmargin-sm">
-                <img style="width: 65px" src="imagenes/Java-logo.png" class="portfolio-logo" />
+                <img
+                  style="width: 65px"
+                  src="imagenes/Java-logo.png"
+                  class="portfolio-logo"
+                />
               </a>
               <a href="" class="btn topmargin-sm">
                 <img src="imagenes/MySQL-logo.png" class="portfolio-logo" />
@@ -218,12 +566,60 @@
               You can complete the form or contact me through the following
               channels:
             </p>
+            <ul class="list-inline">
+              <li
+                class="list-inline-item position-relative"
+                style="width: 100%"
+              >
+                <button
+                  type="button"
+                  id=""
+                  class="edit-buttons position-absolute end-0 mx-4"
+                >
+                  <ion-icon
+                    style="background: none; border-radius: 0"
+                    name="add-outline"
+                  ></ion-icon>
+                </button>
+                <br />
+              </li>
+              <li class="list-inline-item position-relative" style="width: 93%">
+                <button
+                  type="button"
+                  id=""
+                  class="edit-buttons position-absolute end-0 mx-4"
+                >
+                  <ion-icon
+                    style="background: none; border-radius: 0"
+                    name="pencil-sharp"
+                  ></ion-icon>
+                </button>
+              </li>
+              <li class="list-inline-item position-relative">
+                <button
+                  type="button"
+                  id=""
+                  class="edit-buttons position-absolute end-0 mx-4"
+                >
+                  <ion-icon
+                    style="background: none; border-radius: 0"
+                    name="trash-outline"
+                  ></ion-icon>
+                </button>
+              </li>
+            </ul>
             <ul>
               <li>
                 <p id="contact-p" style="margin-top: 30px">
                   <ion-icon
                     name="mail-outline"
-                    style="color: rgb(25, 62, 228); font-size: 25px"
+                    style="
+                      color: rgb(25, 62, 228);
+                      font-size: 25px;
+                      cursor: auto;
+                      background: none;
+                      border-radius: 0;
+                    "
                   ></ion-icon>
                   yesicaguidounla@hotmail.com
                 </p>
@@ -232,7 +628,13 @@
                 <p>
                   <ion-icon
                     name="logo-whatsapp"
-                    style="color: rgb(119, 233, 25); font-size: 25px"
+                    style="
+                      color: rgb(119, 233, 25);
+                      font-size: 25px;
+                      cursor: auto;
+                      background: none;
+                      border-radius: 0;
+                    "
                   ></ion-icon>
                   +54911 6914 9257
                 </p>
@@ -316,8 +718,12 @@
                 </div>
               </div>
               <div class="col-md-12">
-                <button type="submit" class="btn btn-dark full-width">
-                  Send <ion-icon name="paper-plane-outline"></ion-icon>
+                <button type="submit" id="" class="btn btn-dark full-width">
+                  Send
+                  <ion-icon
+                    style="background: none; border-radius: 0"
+                    name="paper-plane-outline"
+                  ></ion-icon>
                 </button>
               </div>
             </form>
@@ -354,27 +760,39 @@
         <ul class="list-inline">
           <li class="list-inline-item">
             <a href="https://www.linkedin.com/in/alfonsina-guido/"
-              ><ion-icon name="logo-linkedin"></ion-icon
+              ><ion-icon style="color: #5c0303" name="logo-linkedin"></ion-icon
             ></a>
           </li>
           <li class="list-inline-item">
             <a href="https://www.instagram.com/alfonsinaguido/"
-              ><ion-icon name="logo-instagram"></ion-icon
+              ><ion-icon style="color: #5c0303" name="logo-instagram"></ion-icon
             ></a>
           </li>
           <li class="list-inline-item">
             <a
               href="https://www.google.com.ar/maps/place/Santa+Anita,+Entre+R%C3%ADos/@-39.8419731,-69.8897935,4.5z/data=!4m5!3m4!1s0x95b1bed65cf67ced:0x9d5d964830dfda26!8m2!3d-32.1757845!4d-58.7861762"
-              ><ion-icon name="location-outline"></ion-icon
+              ><ion-icon
+                style="color: #5c0303"
+                name="location-outline"
+              ></ion-icon
             ></a>
           </li>
         </ul>
         <small
           >Try, fail and try again. That is the path to success.
           <b>Believe in yourself</b>
-          <ion-icon name="sparkles-outline"></ion-icon
+          <ion-icon
+            style="
+              color: #eb671b;
+              cursor: auto;
+              background: none;
+              border-radius: 0;
+            "
+            name="sparkles-outline"
+          ></ion-icon
         ></small>
       </div>
+      <br/>
     </section>
 
     <!-- Bootstrap Bundle with Popper -->
