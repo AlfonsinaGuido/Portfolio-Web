@@ -113,6 +113,7 @@ input:required:invalid {
   }
 
 ion-icon { 
+    color: #fafafa;
     vertical-align: sub;
     --ionicon-stroke-width: 45px;
 }
@@ -121,6 +122,15 @@ ion-icon:hover,
 ion-icon:focus {
     cursor: pointer;
     background: yellow;
+    border-radius: 50%;
+}
+
+.edit-buttons {
+    background: #4faf32;
+    padding: auto;
+    border-radius: 50%;
+    border: 1px;
+    font-size: 25px;
 }
 
 .navbar{ 
@@ -137,6 +147,11 @@ ion-icon:focus {
 .logo-brand{ 
     min-width: 120px;
     max-width: 120px;
+}
+
+.logo-modal{ 
+    min-width: 80px;
+    max-width: 80px;
 }
 
 .navbar-toggler { font-size: 40px; }
@@ -180,7 +195,7 @@ ion-icon:focus {
     color: #fc0f0f;
 }
 
-#footer .list-inline .list-inline-item {
+.list-inline .list-inline-item {
     padding: 10px 15px;
 }
 
@@ -203,6 +218,14 @@ ion-icon:focus {
     .portfolio-logo {
         max-width: 160px !important;
         max-height: 140px !important;
+    }
+
+    .edit-buttons{
+        margin-right: 5px;
+    }
+    
+    .list-pencil-trash{
+        align-items: center;
     }
 }
 
